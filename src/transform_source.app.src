@@ -1,0 +1,11 @@
+{application, transform_source,
+ [{description, "rebar3 plugin for source code transformations"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []}
+ ]}.
