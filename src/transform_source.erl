@@ -87,7 +87,7 @@ cp_apps_src(State, [App|Apps], TransOpts) ->
 
 %% The original idea was to copy all code to different directory
 %% hence a bit more code then needed now that we overwrite
-cp_app_src(App, DestDir, Opts) ->
+cp_app_src(App, _DestDir, Opts) ->
    Context = rebar_compiler_erl:context(App),
    AppDir = rebar_app_info:dir(App),
    SrcDirs = [ filename:join(AppDir, SrcDir) || SrcDir <- maps:get(src_dirs, Context) ],
